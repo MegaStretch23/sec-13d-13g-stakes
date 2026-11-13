@@ -1,0 +1,18 @@
+[project]
+name = "sec-13d-13g-stakes"
+version = "0.1.0"
+description = "Read SEC Schedule 13D/13G ownership stakes (who crossed 5%, and why) from free EDGAR XML. Stdlib only."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+keywords = ["sec", "13d", "13g", "edgar", "activist-investor"]
+
+[project.scripts]
+sec-13d-13g-stakes = "sec_13d_13g_stakes.__main__:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["sec_13d_13g_stakes"]
